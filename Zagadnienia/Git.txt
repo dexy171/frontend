@@ -1,0 +1,57 @@
+Ważne dla nas komendy w GIT:
+
+git clone ADRES
+git add
+git commit -m "OPIS COMMITA - CZĘSTO JEST NA TO JAKAŚ KONWENCJA W FIRMIE"
+git push
+git commit --amend --no-edit
+git push --force-with-lease
+git pull
+git checkout NAZWA BRANCHA
+git remote update
+git merge origin master / git merge origin main
+git revert
+
+
+-----------------------------------
+
+PRZYPADKI UŻYCIA:
+
+git clone ADRES
+git add .
+git commit -m "ZBUD-769 | updated time"
+git push
+
+
+zrobilem jakies kolejne zmiany i chce je wypchnac, ale nie chce tworzyc nowego commita
+git add .
+git commit --amend --no-edit
+git push --force  // NIE UZYWAJCIE
+git push --force-with-lease
+
+git pull
+
+git checkout main i potem git pull
+
+-----------------------
+aktualizacja main/master
+git remote update
+git merge origin master / git merge origin main
+git push
+
+wycofanie zmian:
+git revert 94e176c629dbbcb16e77df8356ca1fad3bc3d847
+git push
+
+
+-------------
+schowek
+pracujemy na branchu A:
+  -zmienilem 4 pliki
+  - musze przeniesc sie na branch B
+git stash save "moja zmiana"
+git checkout B
+
+git checkout A
+git stash pop
+

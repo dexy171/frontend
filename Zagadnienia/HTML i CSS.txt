@@ -1,0 +1,20 @@
+Jeśli robimy klikalny element lub link:
+
+<button type="button">Send message</button>
+<a href="/our-offer">Our offer</a>
+
+My musimy wiedzieć co musi być buttonem, a co linkiem.
+UX i biznes traktują to bardzo wizualnie.
+
+Deweloperzy muszą być bardzo ostrożni. 
+Jeśli jest możliwość podania linku href, to powinien być link <a href>
+Jeśli mamy np. formularz do wysłania i chcemy customowo obsłużyć akcję to powinien być button.
+
+Dobrą praktyką jest ustawianie typu buttonów: button, submit, reset...
+Jeśli nie określimy typu buttona, to ostatni button na stronie dostanie automatycznie typ submit.
+
+Przy resetowaniu za pomocą buttona, pomocne jest używanie defaultValue (w React).
+
+target="_blank" sprawi, że link zostanie otwarty w nowym oknie.
+
+
